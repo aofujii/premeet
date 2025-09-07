@@ -417,8 +417,7 @@
     const btnStartManual = el('button', { class:'btn', onClick: ()=>{
       const end = Date.now() + (Number(state.meeting.manualSeconds)||0)*1000;
       state.meeting._manualEnd = end; save(state);
-      alert('手動カウントダウ
-ンを開始しました');
+      alert('手動カウントダウンを開始しました');
     } }, ['手動カウント開始']);
 
     const wrap = el('div', { class:'editor' }, [
